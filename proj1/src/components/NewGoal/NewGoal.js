@@ -3,7 +3,7 @@ import './NewGoal.css';
 
 
 
-    const NewGoal = () => {
+    const NewGoal = props => {
         const addGoalHandler = event => {
             event.preventDefault();
 

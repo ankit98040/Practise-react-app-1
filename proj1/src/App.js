@@ -13,7 +13,7 @@ function App() {
 
   const addNewGoalHandler = (newGoal) => {
     courseGoals.push(newGoal);
-    console.log(courseGoals;)
+    console.log(courseGoals);
   }
 
   return (
