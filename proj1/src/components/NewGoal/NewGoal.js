@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './NewGoal.css';
 
 
 
     const NewGoal = props => {
-        let enteredText= '';
+        const [enteredText, setEnteredText] = useState('');
+
         const addGoalHandler = event => {
             event.preventDefault();
 
@@ -13,7 +14,7 @@ import './NewGoal.css';
                 text : enteredText
             };
 
-            enteredText='';
+            setEnteredText('');
 
             console.log(newGoal);
 
@@ -21,7 +22,7 @@ import './NewGoal.css';
     };
 
     const textChangeHandler= event => {
-        enteredText = event.target.value;
+        setEnteredText(event.target.value);
     };
 
     return (
